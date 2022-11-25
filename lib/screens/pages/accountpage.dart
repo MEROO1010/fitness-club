@@ -15,9 +15,22 @@ class _accountState extends State<account> {
         Scaffold(
           body: Container(child: Image.asset('assets/images/get_start.png')),
         ),
-        Container(
-          child: TextButton(onPressed: () {}, child: Text('Get Start')),
-        )
+        Row(
+          children: [
+            Container(
+              child: ElevatedButton(
+                onPressed: () {},
+                child: Text(
+                  'Login',
+                  style: TextStyle(fontSize: 20),
+                ),
+              ),
+              padding: EdgeInsets.only(left: 150, top: 620),
+              //width: 200,
+              // height: 40,
+            ),
+          ],
+        ),
       ],
     );
   }
