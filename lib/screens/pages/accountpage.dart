@@ -2,6 +2,7 @@ import 'package:fitness_club/screens/pages/login.dart';
 import 'package:fitness_club/screens/pages/signup.dart';
 import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
+import 'package:hexcolor/hexcolor.dart';
 
 class account extends StatefulWidget {
   const account({super.key});
@@ -16,9 +17,8 @@ class _accountState extends State<account> {
     return Stack(
       children: [
         Scaffold(
-          body: Container(
-              child: Image.asset('assets/images/Personal_train.png',
-                  fit: BoxFit.cover)),
+          body:
+              Container(child: Image.asset('assets/images/create_account.png')),
         ),
         Stack(
           children: [
@@ -39,15 +39,15 @@ class _accountState extends State<account> {
                   'Login',
                 ),
                 style: ElevatedButton.styleFrom(
-                    primary: Color.fromRGBO(156, 166, 78, 1),
-                    onPrimary: Color.fromRGBO(36, 55, 53, 1),
+                    primary: HexColor('#4F4F4F'),
+                    onPrimary: HexColor('#D0D4D5'),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(32.0)),
                     minimumSize: Size(300, 60),
                     textStyle:
                         TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
               ),
-              padding: EdgeInsets.only(left: 30, top: 620),
+              padding: EdgeInsets.only(left: 50, top: 340),
             ),
             Container(
               child: ElevatedButton(
@@ -66,15 +66,15 @@ class _accountState extends State<account> {
                   'SignUp',
                 ),
                 style: ElevatedButton.styleFrom(
-                    primary: Color.fromRGBO(232, 242, 155, 1),
-                    onPrimary: Color.fromRGBO(36, 55, 53, 1),
+                    primary: HexColor('#B7B7B7'),
+                    onPrimary: HexColor('#243735'),
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(32.0)),
                     minimumSize: Size(300, 60),
                     textStyle:
                         TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
               ),
-              padding: EdgeInsets.only(left: 30, top: 700),
+              padding: EdgeInsets.only(left: 50, top: 440),
             ),
           ],
         ),

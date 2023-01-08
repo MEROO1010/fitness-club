@@ -16,7 +16,14 @@ class _loginState extends State<login> {
           backgroundColor: Colors.white,
         ),
         Container(
-          child: Text('Log-In'),
+          child: Image.asset('assets/images/Group 7.png'),
+          padding: EdgeInsets.only(top: 540),
+        ),
+        Container(
+          child: Text(
+            'Log-In',
+            style: TextStyle(decoration: TextDecoration.none),
+          ),
         ),
       ],
     );
