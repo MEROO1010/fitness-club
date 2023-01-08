@@ -17,8 +17,8 @@ class _accountState extends State<account> {
       children: [
         Scaffold(
           body: Container(
-              child: Image.asset('assets/images/get_start.png',
-                  fit: BoxFit.contain)),
+              child: Image.asset('assets/images/Personal_train.png',
+                  fit: BoxFit.cover)),
         ),
         Stack(
           children: [

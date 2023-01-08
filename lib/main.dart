@@ -1,7 +1,6 @@
 import 'package:fitness_club/screens/onboradings/onboarding1.dart';
 import 'package:flutter/material.dart';
 import 'package:splash_screen_view/SplashScreenView.dart';
-import 'package:splash_screen_view/splash_screen_view.dart';
 
 void main() {
   runApp(splashScreen());
