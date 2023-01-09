@@ -72,7 +72,7 @@ class _loginState extends State<login> {
           padding: EdgeInsets.only(top: 500, left: 30),
           child: TextButton(
             onPressed: () {
-              //Navigator.pushNamed(context, '/cappuccino');
+              //Navigator.pushNamed(context, '/main-page');
             },
             child: Text('Login',
                 style: TextStyle(
