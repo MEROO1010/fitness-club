@@ -1,5 +1,7 @@
+import 'package:fitness_club/screens/pages/Discover.dart';
 import 'package:flutter/material.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:page_transition/page_transition.dart';
 
 class login extends StatefulWidget {
   const login({super.key});
@@ -72,7 +74,15 @@ class _loginState extends State<login> {
           padding: EdgeInsets.only(top: 500, left: 30),
           child: TextButton(
             onPressed: () {
-              //Navigator.pushNamed(context, '/main-page');
+              Navigator.push(
+                context,
+                PageTransition(
+                  type: PageTransitionType.leftToRight,
+                  child: Discover(),
+                  isIos: true,
+                  duration: Duration(milliseconds: 400),
+                ),
+              );
             },
             child: Text('Login',
                 style: TextStyle(
